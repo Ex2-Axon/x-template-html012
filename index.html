@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pisces Sanctuary - ดินแดนแห่งความฝัน</title>
+  <link rel="stylesheet" href="assets/tailwind.min.css">
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="assets/load-components.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <div data-include="components/header.html"></div>
+
+  <main class="main-content">
+    <section class="hero-panel">
+      <p class="badge">WHERE DREAMS FLOW</p>
+      <h2>Pisces Sanctuary</h2>
+      <p>ดินแดนแห่งความฝันและความอ่อนโยน ถูกออกแบบให้ตอบโจทย์คนมีนที่มองโลกด้วยหัวใจ พร้อมสร้างพื้นที่ปลอดภัยสำหรับแรงบันดาลใจและความสงบ</p>
+      <div class="hero-actions">
+        <button class="btn btn-primary" type="button" onclick="scrollToSection('about')">อ่านเกี่ยวกับ</button>
+        <button class="btn btn-secondary" type="button" onclick="scrollToSection('strengths')">ดูจุดแข็ง</button>
+      </div>
+    </section>
+
+    <section id="about" class="section-block">
+      <div class="container">
+        <h2 class="section-title">จิตวิญญาณของราศีมีน</h2>
+        <p class="section-copy">ชาวมีนเป็นผู้ส่งต่อความเห็นอกเห็นใจและจินตนาการ พวกเขามีความสามารถปรับตัวและเข้าใจความรู้สึกผู้อื่นได้อย่างลึกซึ้ง เมืองนี้เน้นการโอบรับความฝันและความสร้างสรรค์ของทุกคน</p>
+      </div>
+    </section>
+
+    <section id="strengths" class="section-block">
+      <div class="container layout-grid">
+        <div class="glass-card">
+          <h3>จุดแข็งและเสน่ห์</h3>
+          <ul class="feature-list">
+            <li>✨ ความคิดสร้างสรรค์สูง</li>
+            <li>💖 มีเมตตาและพร้อมช่วยเหลือ</li>
+            <li>🌊 ปรับตัวตามสถานการณ์ได้ดี</li>
+            <li>💌 โรแมนติกและจริงใจ</li>
+          </ul>
+        </div>
+        <div class="glass-card">
+          <h3>พื้นที่ในเมือง</h3>
+          <p class="section-text">สภาพแวดล้อมออกแบบให้มีบรรยากาศสบายตา ผสานเทคโนโลยีน้ำ และสถาปัตยกรรมโปร่งใส เพื่อให้ผู้อยู่อาศัยได้รู้สึกเป็นส่วนหนึ่งของธรรมชาติ</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cautions" class="section-block">
+      <div class="container">
+        <div class="glass-card">
+          <h3>ข้อควรระวัง</h3>
+          <p class="section-text">ความอ่อนไหวคือของขวัญ แต่หากไม่ดูแลอาจทำให้เสียสมดุลทางอารมณ์ได้ เมืองนี้จึงสนับสนุนการพักผ่อน การตั้งขอบเขต และการจัดสรรเวลาสำหรับตัวเองด้วย</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-include="components/footer.html"></div>
+
+  <!-- GDPR/PDPA Cookie Banner -->
+  <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[100] transform translate-y-full transition-transform duration-700 ease-in-out">
+      <div class="bg-slate-900 border-t border-slate-800 shadow-2xl p-4 sm:p-6 text-slate-100" style="font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+          <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div class="flex-1 text-center sm:text-left">
+                  <h3 class="text-sm font-semibold mb-1 flex items-center justify-center sm:justify-start gap-2">
+                      <i class="fa-solid fa-cookie-bite text-teal-400"></i> นโยบายการใช้คุกกี้ (Cookie Notice)
+                  </h3>
+                  <p class="text-xs text-slate-400 m-0">
+                      เว็บไซต์นี้ใช้คุกกี้เพื่อนำเสนอประสบการณ์ที่ดีที่สุดสำหรับคุณ การใช้งานเว็บไซต์นี้ต่อไปถือเป็นการยอมรับนโยบายการใช้งานคุกกี้ของเรา
+                      <a href="https://microtronic-thailand.github.io/privacy-policy/?lang=en" target="_blank" class="text-teal-400 hover:underline">อ่านรายละเอียดเพิ่มเติม</a>
+                  </p>
+              </div>
+              <div class="flex flex-wrap items-center justify-center sm:justify-end gap-3">
+                  <button id="btn-cookie-settings" class="text-xs font-medium text-slate-300 hover:text-white px-3 py-2 transition-colors border-0 bg-transparent">
+                      Cookies Settings
+                  </button>
+                  <button id="btn-cookie-reject" class="text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 hover:border-slate-600 px-4 py-2 rounded-lg transition-all">
+                      Reject All
+                  </button>
+                  <button id="btn-cookie-accept" class="text-xs font-medium bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-400 hover:to-cyan-400 text-slate-950 shadow-lg px-4 py-2 rounded-lg transition-all border-0">
+                      Accept All
+                  </button>
+                  <button id="btn-cookie-close" class="ml-2 text-slate-500 hover:text-slate-300 transition-colors border-0 bg-transparent">
+                      <i class="fa-solid fa-times"></i>
+                  </button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <script>
+      // Cookie Banner Script
+      document.addEventListener('DOMContentLoaded', () => {
+          const banner = document.getElementById('cookie-banner');
+          const acceptBtn = document.getElementById('btn-cookie-accept');
+          const rejectBtn = document.getElementById('btn-cookie-reject');
+          const closeBtn = document.getElementById('btn-cookie-close');
+          const settingsBtn = document.getElementById('btn-cookie-settings');
+
+          if (!localStorage.getItem('cookies-accepted')) {
+              setTimeout(() => {
+                  banner.classList.remove('translate-y-full');
+              }, 1000);
+          }
+
+          const dismissBanner = () => {
+              banner.classList.add('translate-y-full');
+          };
+
+          acceptBtn.addEventListener('click', () => {
+              localStorage.setItem('cookies-accepted', 'true');
+              dismissBanner();
+          });
+
+          rejectBtn.addEventListener('click', () => {
+              localStorage.setItem('cookies-accepted', 'false');
+              dismissBanner();
+          });
+
+          closeBtn.addEventListener('click', dismissBanner);
+          settingsBtn.addEventListener('click', () => {
+              alert('ระบบการตั้งค่าคุกกี้กำลังถูกจัดเตรียม');
+          });
+      });
+  </script>
+</body>
+</html>
